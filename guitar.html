@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Timothy Pedone - Guitar</title>
+    <link rel="shortcut icon" href="images/pick.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin= />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap" />
+
+    <!-- Need a visual blank slate? Remove all code in `styles.css`! -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="home">Home</a>
+        <a href="guitar.html" aria-current="page" id="guitar">Guitar</a>
+        <a href="research.html" id="research">Research</a>
+        <!-- <a href="/examples.html" id="examples">Examples</a> -->
+        <a href="contact.html" id="contact">Contact</a>
+    </nav>
+    <main class="guitar-main">
+        <h1>Guitar Fretboard Crash Course</h1>
+        <section>
+            <h2>Standard Tuning</h2>
+            <p>Why do we tune the guitar in this "standard" way that we do?</br>
+                TL;DR it's easier to play that way and it's been around since the 1500s </br>
+                If you need to brush up on your standard tuning knowledge, here's a refresher:</p>
+                <img class="tuning" height="150px" src="./images/standard-tuning.png" alt="Standard Tuning">
+                <p>The highest sounding string is the 1st string (e), the lowest sounding string is the 6th string (E). </br>
+                (You wouldn't believe how many students get this wrong, even after years of playing).
+                </p>
+            <section>
+                <h2>The Horizontal</h2>
+                <p>Next, we're going to use the major scale to move horizontally up the fretboard.
+                </p>
+                <p>
+                    Why the major scale? </br>
+                    Because it's the basis for everything in western music nowadays, which had its own evolution from
+                    the
+                    modes used in the Renaissance (but that's a whole other story).
+                </p>
+                <p>
+                    First, a little refresher of the "formula" of the major scale: </br> 
+                    Whole step - Whole step - Half step -
+                    Whole step - Whole step - Whole step - Half step </br>
+                    C - D - E - F - G - A - B - C</br>
+                    Do - Re - Mi - Fa - Sol - La - Si - Do
+                </p>
+                <p>Here's what that looks like on the 2nd string:
+                </p>
+                
+                <div>
+                <img class="fretboard" src="./images/C Scale - 2.png" alt="C Major - B string">
+                </div>
+
+                <p>Next, we'll play the major scale horizontally across all six strings. </br>
+                You can flip through the strings below:
+                </p> 
+
+                <div class="slider-container">
+                    <img id="slider-image-2" class="slider-img" src="imageA.jpg" alt="Displayed Image 2">
+                    <div class="slider-nav">
+                        <button id="prev-btn-2" class="slider-button">‹ Prev</button>
+                        <button id="next-btn-2" class="slider-button">Next ›</button>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <h2>The Vertical</h2>
+                <p>
+                    If we only take every C note from those scales and connect them, we get these <u>octave patterns</u>:</br>
+                    <img class="fretboard" src="./images/C Octaves.png" alt="C Octaves Full Fretboard">
+                </p>
+                <p>Have a scroll through the different octave shapes below:</p>
+                <div class="slider-container">
+                    <img id="slider-image" class="slider-img" src="image1.jpg" alt="Displayed Image">
+                    <div class="slider-nav">
+                        <button id="prev-btn" class="slider-button">‹ Prev</button>
+                        <button id="next-btn" class="slider-button">Next ›</button>
+                    </div>
+                </div>
+                <p>
+                    Your root is the most important note; it's your anchor. It's the relation between the root and all
+                    the other notes that will determine the resulting sonority; everything is in relation to the root.
+                    </br>
+                    The better you find and can see your root notes, the more freedom, command and insight you'll have
+                    over the fretboard
+                </p>
+            </section>
+            <section>
+                <h2>The Matrix</h2>
+                <h3>3 Directions</h3>
+                <section class="directions">
+                    <section>
+                        <h2>Left</h2>
+                        <video autoplay loop muted>
+                            <source src="./video/Left.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </section>
+                    <section>
+                        <h2>Down</h2>
+                        <video autoplay loop muted>
+                            <source src="./video/Down.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </section>
+                    <section>
+                        <h2>Right</h2>
+                        <video autoplay loop muted>
+                            <source src="./video/Right.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </section>
+                </section>
+            </section>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li>Timothy Pedone</li>
+            <li>hello@timothypedone.com</li>
+        </ul>
+        <ul id="footer-right">
+            <li>Powered by Edge Effect</li>
+            <li>2025</li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

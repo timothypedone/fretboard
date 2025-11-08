@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  /*min-width: min-content;*/
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Darker Grotesque';
+  color: rgb(0, 23, 50);
+  background-color: whitesmoke;
+
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: whitesmoke;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+#home {
+  border: 3px solid black;
+  background-color: whitesmoke;
+}
+
+#research {
+  border: 3px solid #cc2936ff;
+  color: #cc2936ff;
+}
+
+#examples {
+  border: 3px solid #388697ff;
+  color: #388697ff;
+}
+
+#contact {
+  border: 3px solid #388697ff;
+  color: #388697ff;
+}
+
+#guitar {
+  border: 3px solid #08415cff;
+  color: #08415cff;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-style: italic;
+}
+
+.header {
+  background-color: #08415cff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome {
+  padding: 1.5rem;
+  color: whitesmoke;
+}
+
+.research-main {
+  background-color: whitesmoke;
+  padding: 1.5rem;
+}
+
+.research-main h1,
+h2,
+h3 {
+  color: #cc2936ff;
+}
+
+.examples-main {
+  background-color: #b5ffe1ff;
+  padding: 1.5rem;
+}
+
+.contact-main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.guitar-main {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.directions {
+  display: block;
+}
+
+.projects {
+  padding: 1.5rem;
+}
+
+.opleiding {
+  padding: 1.5rem;
+}
+
+.timo {
+  padding: 1.5rem;
+}
+
+/* Style the horizontal fretboard image */
+.guitar-main img:not(.fretboard, .tuning, .slider-img) {
+    /* Use a reasonable max-width, like half the page, or fit the content area */
+    max-width: 500px;
+    width: 90%; /* Fluidly fills 90% of its container, up to 500px */
+    height: auto;
+    display: block; /* Ensures it is on its own line */
+    /* margin: 15px auto; Centers it */
+}
+
+/* Style the vertical fretboard image (the C Octaves image) */
+.fretboard {
+    width: 100%; /* Fill its parent container */
+    max-width: 800px; /* Set a maximum size so it doesn't get huge */
+    height: auto;
+    display: block;
+    /* margin: 15px auto; */
+}
+
+.slider-container {
+    /* REMOVED 'position: relative' */
+    width: 100%; 
+    max-width: 800px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    clear: both;
+}
+
+.slider-img {
+    width: 100%;
+    display: block;
+}
+
+/* NEW: Styles for the button wrapper */
+.slider-nav {
+    text-align: center; /* This centers the buttons */
+    padding: 15px 0; /* Adds some space above/below the buttons */
+    background-color: #f9f9f9; /* Light background for the nav area */
+    border-top: 1px solid #eee; /* Separator line */
+}
+
+/* UPDATED: Simplified button styles */
+.slider-button {
+    /* ALL 'position', 'top', 'transform', 'left', 'right' rules are GONE */
+    
+    background-color: #08415cff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; /* Changed from 50% */
+    margin: 0 5px; /* Adds space between the buttons */
+    user-select: none; 
+}
+
+.slider-button:hover {
+    background-color: #0056b3;
+}
+
+/* 2a. Make the videos responsive */
+.directions video {
+    /* Video should be fluid within its container */
+    width: 100%; 
+    /* Set a maximum width for the video itself */
+    max-width: 400px; 
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* 2b. Make the sections within .directions share space and wrap on small screens */
+.directions {
+    display: flex;
+    /* If the screen gets too small, the items will wrap to the next line */
+    flex-wrap: wrap; 
+    /* Space out the items */
+    justify-content: space-around; 
+    gap: 20px; /* Add some space between the sections when wrapped */
+}
+
+/* 2c. Give each video section a flexible container */
+.directions section {
+    /* Allow the sections to grow and shrink, but set a minimum width */
+    flex: 1 1 300px; 
+    text-align: center; /* Center the video and heading */
+    min-width: 300px; /* Ensure each video has enough space */
+}
+
+.footer {
+  padding: 1.5rem;
+  background-color: #08415cff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+#footer-right {
+  text-align: right;
+}
+
+/* CSS HEX 
+--indigo-dye: #08415cff;
+--persian-red: #cc2936ff;
+--tea-rose-red: #ebbab9ff;
+--blue-munsell: #388697ff;
+--aquamarine: #b5ffe1ff;
+*/
