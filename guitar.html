@@ -12,7 +12,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap" />
 
-    <!-- Need a visual blank slate? Remove all code in `styles.css`! -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
 </head>
@@ -28,16 +27,17 @@
     <main class="guitar-main">
         <h1>Guitar Fretboard Crash Course</h1>
         <section>
-            <h2>Standard Tuning</h2>
-            <p>Why do we tune the guitar in this "standard" way that we do?</br>
-                TL;DR it's easier to play that way and it's been around since the 1500s </br>
+            <h2>1. Standard Tuning</h2>
+            <p>First, we'll start with the notes of the open strings in standard tuning. </br>
+                Why do we tune the guitar in this "standard" way that we do?</br>
+                TL;DR it's easier to play that way and it's been around since the 1500s. </br>
                 If you need to brush up on your standard tuning knowledge, here's a refresher:</p>
                 <img class="tuning" height="150px" src="./images/standard-tuning.png" alt="Standard Tuning">
                 <p>The highest sounding string is the 1st string (e), the lowest sounding string is the 6th string (E). </br>
                 (You wouldn't believe how many students get this wrong, even after years of playing).
                 </p>
             <section>
-                <h2>The Horizontal</h2>
+                <h2>2. The Horizontal</h2>
                 <p>Next, we're going to use the major scale to move horizontally up the fretboard.
                 </p>
                 <p>
@@ -71,10 +71,17 @@
                         <button id="next-btn-2" class="slider-button">Next ›</button>
                     </div>
                 </div>
+                <p>
+                    One thing we can note is that the major scale consists of two "tetrachords" (basically a four-note scale segment).</br> 
+                    <img src="./images/tetrachord.png" alt="Tetrachord"></br>
+                    Some may say this is "the key" to the major scale on the fretboard, because it's a symmetrical shape, but it creates a diagonal shape across the fretboard.</br>
+                    The guitar works with positions and diagonal shapes don't stay within one position. That's also why we're not going to be using a strict 3-note-per-string fingering as the basis of our practice, but a variant of it (but I'm getting ahead of myself).</br>
+                    It's more an interesting thing to notice than a real "hack" to unlock the fretboard.
+                </p>
 
             </section>
             <section>
-                <h2>The Vertical</h2>
+                <h2>3. The Vertical</h2>
                 <p>
                     If we only take every C note from those scales and connect them, we get these <u>octave patterns</u>:</br>
                     <img class="fretboard" src="./images/C Octaves.png" alt="C Octaves Full Fretboard">
@@ -96,7 +103,13 @@
                 </p>
             </section>
             <section>
-                <h2>The Matrix</h2>
+                <h2>4. Navigating The Matrix</h2>
+                <p>This little concept will make your thinking (and by extension your practicing) very organized and very clear.</p>
+                <p>
+                    On every root note we have 3 general directions in which the rest of the arpeggio/scale goes.</br>
+                    We can continue “behind” the note (Left), “on” the note (Down) or “after” the note (Right).</br>
+                    Every single possibility is contained within these 3 directions and once you have these core principles down you’ll never get lost on the fretboard again.
+                </p>
                 <h3>3 Directions</h3>
                 <section class="directions">
                     <section>
@@ -121,6 +134,38 @@
                         </video>
                     </section>
                 </section>
+                <p>Let's see how that works if we cycle the directions on our Cs.</p>
+                <div class="slider-container">
+                    <img id="slider-image-3" class="slider-img" src="imageA.jpg" alt="C Major 1-2-3">
+                    <div class="slider-nav">
+                        <button id="prev-btn-3" class="slider-button">‹ Prev</button>
+                        <button id="next-btn-3" class="slider-button">Next ›</button>
+                    </div>
+                </div>
+                <h2>Putting it together</h2>
+                <p>Let’s now combine this with our octave patterns and play a C Major scale in different positions.</p>
+                <p>We’re not going to start at the very first possibility to play a C major scale on the neck, because that would involve using the open strings. 
+                    For this first step I want you to see the fingering and with open strings it gets a little muddled. Not to worry though, they will be added back in later on.</p>
+                <h3>Left</h3>
+                    <p>Let’s start in 5th position, meaning your index finger will be at the 5th fret.
+                Your pinky will then be at the 8th fret. 
+                8th fret, 6th string = C</br>
+                From there we’ll go into our first “category”; we’re going to continue behind the note.</p>
+                <h3>Down</h3>
+                <p>Next we’re going to shift to the 7th position, so that our index finger is on the 7th fret and our middle finger is on the C on the 8th fret.</br>
+                From here we’re going to complete the scale going straight down.
+                </p>
+                <h3>Right</h3>
+                <p>And finally we’ll shift over one last time and we’ll have our index finger on the 8th fret, so we’re in 8th position.</br>
+                From here we continue after the note.
+                </p>
+                <div class="slider-container">
+                    <img id="slider-image-4" class="slider-img" src="imageA.jpg" alt="C Major in three directions">
+                    <div class="slider-nav">
+                        <button id="prev-btn-4" class="slider-button">‹ Prev</button>
+                        <button id="next-btn-4" class="slider-button">Next ›</button>
+                    </div>
+                </div>
             </section>
     </main>
     <footer class="footer">
