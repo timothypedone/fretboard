@@ -100,5 +100,18 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
     // Call the function using the new, unique IDs
     createSlider(slider4Images, "slider-image-4", "prev-btn-4", "next-btn-4");
+  
+    // --- SLIDER 5 (Define your new image paths and new IDs) ---
+    const slider5Images = [
+        "./images/C 5 Major Left Scale.png",
+        "./images/C 5 Major Down Scale.png", 
+        "./images/C 5 Major Right Scale.png",
+        "./images/C 6 Major Left Scale.png",
+        "./images/C 6 Major Down Scale.png", 
+        "./images/C 6 Major Right Scale.png",
+        "./images/C 4 Major Right Scale.png"
+    ];
+    // Call the function using the new, unique IDs
+    createSlider(slider5Images, "slider-image-5", "prev-btn-5", "next-btn-5");
 
 });
