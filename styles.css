@@ -129,8 +129,12 @@ h3 {
   padding: 1.5rem;
 }
 
+.major-string-2{
+  max-width: 240px;
+}
+
 /* Style the horizontal fretboard image */
-.guitar-main img:not(.fretboard, .tuning, .slider-img) {
+.guitar-main img:not(.fretboard, .tuning, .slider-img, .major-string-2) {
     /* Use a reasonable max-width, like half the page, or fit the content area */
     max-width: 500px;
     width: 90%; /* Fluidly fills 90% of its container, up to 500px */
