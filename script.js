@@ -114,4 +114,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call the function using the new, unique IDs
     createSlider(slider5Images, "slider-image-5", "prev-btn-5", "next-btn-5");
 
+// --- SLIDER 6 (Define your new image paths and new IDs) ---
+    const slider6Images = [
+        "./images/5L.png",
+        "./images/5D.png", 
+        "./images/5R.png",
+        "./images/6L.png",
+        "./images/6D.png", 
+        "./images/6R.png",
+        "./images/4R.png",
+        "./images/5L - 8va.png",
+    ];
+    // Call the function using the new, unique IDs
+    createSlider(slider6Images, "slider-image-6", "prev-btn-6", "next-btn-6");
+
 });

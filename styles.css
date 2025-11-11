@@ -196,6 +196,17 @@ h3 {
     background-color: #0056b3;
 }
 
+.slider-container-cards {
+    /* REMOVED 'position: relative' */
+    width: 100%; 
+    max-width: 500px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    clear: both;
+}
+
 /* 2a. Make the videos responsive */
 .directions video {
     /* Video should be fluid within its container */
